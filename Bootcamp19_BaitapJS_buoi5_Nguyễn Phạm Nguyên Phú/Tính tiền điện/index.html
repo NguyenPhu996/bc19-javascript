@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính tiền điện</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="card w-50 mx-auto">
+            <div class="card-header text-center">Tính tiền điện</div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="name">Tên khách hàng</label>
+                    <input type="text" id="name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="kw">Số KW tiêu thụ</label>
+                    <input type="number" id="kw" class="form-control">
+                </div>
+                <div class="text-center">
+                    <button id="submit" class="btn btn-primary">Tính</button>
+                </div>
+                <div class="result" class="card w-50 mx-auto">
+                    <label class="ket-qua">Thành tiền</label>
+                    <input type="text" id="result" class="form-control">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

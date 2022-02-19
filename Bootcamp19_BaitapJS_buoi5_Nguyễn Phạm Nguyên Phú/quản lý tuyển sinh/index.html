@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý tuyển sinh</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="card w-50 mx-auto">
+            <div class="card-header text-center">Quản Lý Tuyển Sinh</div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="point">Nhập Điểm Chuẩn</label>
+                    <input type="number" id="point" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="name">Họ Và Tên Thí Sinh</label>
+                    <input type="text" id="name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="math">Điểm môn Toán</label>
+                    <input type="text" id="math" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="literature">Điểm môn Ngữ Văn</label>
+                    <input type="text" id="literature" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="english">Điểm môn Anh Văn</label>
+                    <input type="text" id="english" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="zone">Vui lòng chọn khu vực ưu tiên</label>
+                    <select class="form-control" id="zone">
+                      <option value="2">Khu Vực A</option>
+                      <option value="1">Khu Vực B</option>
+                      <option value="0.5">Khu Vực C</option>
+                      <option value="0">Không Thuộc Khu Vực Nào</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="object">Vui lòng chọn đối tượng ưu tiên</label>
+                    <select class="form-control" id="object">
+                      <option value="2.5">Đối Tượng Ưu Tiên 1</option>
+                      <option value="1.5">Đối Tượng Ưu Tiên 2</option>
+                      <option value="1">Đối Tượng Ưu Tiên 3</option>
+                      <option value="0">Không Thuộc Đối Tượng Ưu Tiên</option>
+                    </select>
+                </div>
+                <div class="text-center">
+                    <button id="submit" class="btn btn-primary">Kết quả</button>
+                </div>
+                <div class="result" class="card w-50 mx-auto">
+                    <label class="ket-qua">Tổng điểm đạt được</label>
+                    <input type="text" id="result" class="form-control">
+                </div>
+                <div class="all" class="card w-50 mx-auto">
+                    <label class="all"></label>
+                    <input type="text" id="all" class="form-control">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
